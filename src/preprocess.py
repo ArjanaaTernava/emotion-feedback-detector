@@ -12,7 +12,7 @@ from transformers import (
 )
 from sklearn.metrics import f1_score, accuracy_score, classification_report
 
-CSV_PATH = "data/goemotions_train.csv"
+CSV_PATH = "data/reviews_with_custom_emotions.xlsx"
 TEXT_COLUMN = "text"
 
 FIRST_EMOTION = "admiration"
