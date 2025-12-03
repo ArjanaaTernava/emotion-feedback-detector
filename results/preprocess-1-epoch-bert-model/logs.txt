@@ -1,0 +1,188 @@
+🔍 Logging to: preprocess-1-epoka-bert-model-80-20-new-dataset\logs.txt
+📥 Loading dataset...
+Sample rows:
+                                                text    label
+0  i feel awful about it too because it s my job ...  sadness
+1                              im alone i feel awful  sadness
+2  ive probably mentioned this before but i reall...      joy
+3           i was feeling a little low few days back  sadness
+4  i beleive that i am much more sensitive to oth...     love
+💾 Saved label mapping → preprocess-1-epoka-bert-model-80-20-new-dataset\label_mapping.json
+
+Label distribution:
+label
+1    141067
+0    121187
+3     57317
+4     47712
+2     34554
+5     14972
+Name: count, dtype: int64
+
+Train size: 333447, Test size: 83362
+🔑 Loading tokenizer and model...
+✂️ Tokenizing...
+⚙️ Setting training arguments...
+🧠 Initializing Trainer...
+🚀 Training...
+{'loss': 1.1135, 'grad_norm': 6.323369026184082, 'learning_rate': 1.9809030276858118e-05, 'epoch': 0.01}
+{'loss': 0.5004, 'grad_norm': 3.331601858139038, 'learning_rate': 1.9617100906866276e-05, 'epoch': 0.02}
+{'loss': 0.2971, 'grad_norm': 5.049227237701416, 'learning_rate': 1.942517153687443e-05, 'epoch': 0.03}
+{'loss': 0.2786, 'grad_norm': 16.196949005126953, 'learning_rate': 1.923324216688259e-05, 'epoch': 0.04}
+{'loss': 0.2439, 'grad_norm': 4.907871723175049, 'learning_rate': 1.9041312796890744e-05, 'epoch': 0.05}
+{'loss': 0.2246, 'grad_norm': 0.2835390269756317, 'learning_rate': 1.8849383426898903e-05, 'epoch': 0.06}
+{'loss': 0.2033, 'grad_norm': 5.41062068939209, 'learning_rate': 1.865745405690706e-05, 'epoch': 0.07}
+{'loss': 0.1757, 'grad_norm': 4.839349746704102, 'learning_rate': 1.8465524686915216e-05, 'epoch': 0.08}
+{'loss': 0.1727, 'grad_norm': 4.599009037017822, 'learning_rate': 1.8273595316923375e-05, 'epoch': 0.09}
+{'loss': 0.1795, 'grad_norm': 8.960502624511719, 'learning_rate': 1.808166594693153e-05, 'epoch': 0.1}
+{'loss': 0.1701, 'grad_norm': 8.491438865661621, 'learning_rate': 1.7889736576939688e-05, 'epoch': 0.11}
+{'loss': 0.1568, 'grad_norm': 4.01499080657959, 'learning_rate': 1.7697807206947846e-05, 'epoch': 0.12}
+{'loss': 0.1668, 'grad_norm': 1.6404540538787842, 'learning_rate': 1.7505877836956e-05, 'epoch': 0.12}
+{'loss': 0.1546, 'grad_norm': 1.1608046293258667, 'learning_rate': 1.731394846696416e-05, 'epoch': 0.13}
+{'loss': 0.1274, 'grad_norm': 7.256911277770996, 'learning_rate': 1.7122019096972315e-05, 'epoch': 0.14}
+{'loss': 0.1425, 'grad_norm': 0.037843603640794754, 'learning_rate': 1.6930089726980473e-05, 'epoch': 0.15}
+{'loss': 0.1282, 'grad_norm': 1.2408839464187622, 'learning_rate': 1.6738160356988628e-05, 'epoch': 0.16}
+{'loss': 0.1341, 'grad_norm': 2.720379114151001, 'learning_rate': 1.6546230986996786e-05, 'epoch': 0.17}
+{'loss': 0.1274, 'grad_norm': 6.816196441650391, 'learning_rate': 1.6354301617004945e-05, 'epoch': 0.18}
+{'loss': 0.1322, 'grad_norm': 2.9981188774108887, 'learning_rate': 1.61623722470131e-05, 'epoch': 0.19}
+{'loss': 0.123, 'grad_norm': 0.02576255239546299, 'learning_rate': 1.5970442877021258e-05, 'epoch': 0.2}
+{'loss': 0.1184, 'grad_norm': 1.3929988145828247, 'learning_rate': 1.5778513507029413e-05, 'epoch': 0.21}
+{'loss': 0.1175, 'grad_norm': 0.15996646881103516, 'learning_rate': 1.558658413703757e-05, 'epoch': 0.22}
+{'loss': 0.1166, 'grad_norm': 1.0854084491729736, 'learning_rate': 1.539465476704573e-05, 'epoch': 0.23}
+{'loss': 0.103, 'grad_norm': 1.4831265211105347, 'learning_rate': 1.5202725397053886e-05, 'epoch': 0.24}
+{'loss': 0.1127, 'grad_norm': 2.178105115890503, 'learning_rate': 1.5010796027062043e-05, 'epoch': 0.25}
+{'loss': 0.113, 'grad_norm': 0.010772219859063625, 'learning_rate': 1.48188666570702e-05, 'epoch': 0.26}
+{'loss': 0.1268, 'grad_norm': 1.345716953277588, 'learning_rate': 1.4626937287078355e-05, 'epoch': 0.27}
+{'loss': 0.1173, 'grad_norm': 0.49684938788414, 'learning_rate': 1.4435007917086515e-05, 'epoch': 0.28}
+{'loss': 0.1128, 'grad_norm': 2.604959011077881, 'learning_rate': 1.4243078547094671e-05, 'epoch': 0.29}
+{'loss': 0.1203, 'grad_norm': 0.9064344763755798, 'learning_rate': 1.4051149177102828e-05, 'epoch': 0.3}
+{'loss': 0.1149, 'grad_norm': 0.04096158221364021, 'learning_rate': 1.3859219807110985e-05, 'epoch': 0.31}
+{'loss': 0.1128, 'grad_norm': 3.9717817306518555, 'learning_rate': 1.366729043711914e-05, 'epoch': 0.32}
+{'loss': 0.1178, 'grad_norm': 1.5757704973220825, 'learning_rate': 1.3475361067127296e-05, 'epoch': 0.33}
+{'loss': 0.1142, 'grad_norm': 0.806022047996521, 'learning_rate': 1.3283431697135457e-05, 'epoch': 0.34}
+{'loss': 0.1103, 'grad_norm': 0.5682593584060669, 'learning_rate': 1.3091502327143613e-05, 'epoch': 0.35}
+{'loss': 0.1096, 'grad_norm': 1.2485761642456055, 'learning_rate': 1.289957295715177e-05, 'epoch': 0.36}
+{'loss': 0.1137, 'grad_norm': 1.5381898880004883, 'learning_rate': 1.2707643587159927e-05, 'epoch': 0.36}
+{'loss': 0.0961, 'grad_norm': 5.903798580169678, 'learning_rate': 1.2515714217168081e-05, 'epoch': 0.37}
+{'loss': 0.1118, 'grad_norm': 0.8211095929145813, 'learning_rate': 1.2323784847176242e-05, 'epoch': 0.38}
+{'loss': 0.0991, 'grad_norm': 0.769584059715271, 'learning_rate': 1.2131855477184398e-05, 'epoch': 0.39}
+{'loss': 0.1283, 'grad_norm': 2.236344337463379, 'learning_rate': 1.1939926107192555e-05, 'epoch': 0.4}
+{'loss': 0.1046, 'grad_norm': 1.084564447402954, 'learning_rate': 1.1747996737200712e-05, 'epoch': 0.41}
+{'loss': 0.1178, 'grad_norm': 2.205617904663086, 'learning_rate': 1.1556067367208868e-05, 'epoch': 0.42}
+{'loss': 0.0973, 'grad_norm': 1.1800920963287354, 'learning_rate': 1.1364137997217023e-05, 'epoch': 0.43}
+{'loss': 0.1059, 'grad_norm': 2.5438454151153564, 'learning_rate': 1.1172208627225183e-05, 'epoch': 0.44}
+{'loss': 0.0988, 'grad_norm': 0.9114636182785034, 'learning_rate': 1.098027925723334e-05, 'epoch': 0.45}
+{'loss': 0.113, 'grad_norm': 1.8299446105957031, 'learning_rate': 1.0788349887241497e-05, 'epoch': 0.46}
+{'loss': 0.1104, 'grad_norm': 1.0195691585540771, 'learning_rate': 1.0596420517249653e-05, 'epoch': 0.47}
+{'loss': 0.1076, 'grad_norm': 2.6725289821624756, 'learning_rate': 1.040449114725781e-05, 'epoch': 0.48}
+{'loss': 0.0985, 'grad_norm': 2.358872890472412, 'learning_rate': 1.0212561777265968e-05, 'epoch': 0.49}
+{'loss': 0.1043, 'grad_norm': 1.1335406303405762, 'learning_rate': 1.0020632407274125e-05, 'epoch': 0.5}
+{'loss': 0.0955, 'grad_norm': 1.321347951889038, 'learning_rate': 9.828703037282282e-06, 'epoch': 0.51}
+{'loss': 0.1051, 'grad_norm': 4.381722450256348, 'learning_rate': 9.636773667290438e-06, 'epoch': 0.52}
+{'loss': 0.1069, 'grad_norm': 1.0758106708526611, 'learning_rate': 9.444844297298595e-06, 'epoch': 0.53}
+{'loss': 0.0928, 'grad_norm': 0.0072538405656814575, 'learning_rate': 9.252914927306752e-06, 'epoch': 0.54}
+{'loss': 0.0879, 'grad_norm': 1.0015532970428467, 'learning_rate': 9.060985557314908e-06, 'epoch': 0.55}
+{'loss': 0.0981, 'grad_norm': 0.6820021867752075, 'learning_rate': 8.869056187323067e-06, 'epoch': 0.56}
+{'loss': 0.093, 'grad_norm': 1.286109447479248, 'learning_rate': 8.677126817331223e-06, 'epoch': 0.57}
+{'loss': 0.0989, 'grad_norm': 2.5125105381011963, 'learning_rate': 8.48519744733938e-06, 'epoch': 0.58}
+{'loss': 0.1015, 'grad_norm': 0.8925705552101135, 'learning_rate': 8.293268077347537e-06, 'epoch': 0.59}
+{'loss': 0.1049, 'grad_norm': 1.656028389930725, 'learning_rate': 8.101338707355693e-06, 'epoch': 0.59}
+{'loss': 0.0982, 'grad_norm': 0.019418789073824883, 'learning_rate': 7.90940933736385e-06, 'epoch': 0.6}
+{'loss': 0.1137, 'grad_norm': 1.1827166080474854, 'learning_rate': 7.717479967372008e-06, 'epoch': 0.61}
+{'loss': 0.0918, 'grad_norm': 1.4267629384994507, 'learning_rate': 7.525550597380164e-06, 'epoch': 0.62}
+{'loss': 0.0883, 'grad_norm': 1.4357913732528687, 'learning_rate': 7.333621227388321e-06, 'epoch': 0.63}
+{'loss': 0.0988, 'grad_norm': 1.759994387626648, 'learning_rate': 7.1416918573964785e-06, 'epoch': 0.64}
+{'loss': 0.0877, 'grad_norm': 0.7521603107452393, 'learning_rate': 6.949762487404635e-06, 'epoch': 0.65}
+{'loss': 0.0906, 'grad_norm': 1.2288122177124023, 'learning_rate': 6.7578331174127935e-06, 'epoch': 0.66}
+{'loss': 0.0948, 'grad_norm': 1.2468972206115723, 'learning_rate': 6.565903747420949e-06, 'epoch': 0.67}
+{'loss': 0.0931, 'grad_norm': 1.500040888786316, 'learning_rate': 6.373974377429106e-06, 'epoch': 0.68}
+{'loss': 0.0937, 'grad_norm': 0.005708270240575075, 'learning_rate': 6.182045007437264e-06, 'epoch': 0.69}
+{'loss': 0.1116, 'grad_norm': 30.390151977539062, 'learning_rate': 5.99011563744542e-06, 'epoch': 0.7}
+{'loss': 0.099, 'grad_norm': 1.1696619987487793, 'learning_rate': 5.798186267453577e-06, 'epoch': 0.71}
+{'loss': 0.0854, 'grad_norm': 0.004533860366791487, 'learning_rate': 5.606256897461735e-06, 'epoch': 0.72}
+{'loss': 0.103, 'grad_norm': 1.4222302436828613, 'learning_rate': 5.414327527469891e-06, 'epoch': 0.73}
+{'loss': 0.0946, 'grad_norm': 0.0035319156013429165, 'learning_rate': 5.222398157478048e-06, 'epoch': 0.74}
+{'loss': 0.1, 'grad_norm': 1.028709888458252, 'learning_rate': 5.030468787486205e-06, 'epoch': 0.75}
+{'loss': 0.0834, 'grad_norm': 1.2128132581710815, 'learning_rate': 4.838539417494362e-06, 'epoch': 0.76}
+{'loss': 0.0996, 'grad_norm': 1.9873548746109009, 'learning_rate': 4.6466100475025195e-06, 'epoch': 0.77}
+{'loss': 0.0929, 'grad_norm': 60.24472427368164, 'learning_rate': 4.454680677510676e-06, 'epoch': 0.78}
+{'loss': 0.0907, 'grad_norm': 0.004261228255927563, 'learning_rate': 4.262751307518833e-06, 'epoch': 0.79}
+{'loss': 0.0976, 'grad_norm': 1.1863092184066772, 'learning_rate': 4.07082193752699e-06, 'epoch': 0.8}
+{'loss': 0.0919, 'grad_norm': 0.8473060131072998, 'learning_rate': 3.878892567535147e-06, 'epoch': 0.81}
+{'loss': 0.0877, 'grad_norm': 1.5238935947418213, 'learning_rate': 3.6869631975433045e-06, 'epoch': 0.82}
+{'loss': 0.091, 'grad_norm': 1.0493284463882446, 'learning_rate': 3.4950338275514612e-06, 'epoch': 0.83}
+{'loss': 0.0885, 'grad_norm': 1.3681248426437378, 'learning_rate': 3.3031044575596183e-06, 'epoch': 0.83}
+{'loss': 0.0964, 'grad_norm': 1.8861395120620728, 'learning_rate': 3.1111750875677754e-06, 'epoch': 0.84}
+{'loss': 0.0896, 'grad_norm': 0.003082034643739462, 'learning_rate': 2.9192457175759325e-06, 'epoch': 0.85}
+{'loss': 0.0859, 'grad_norm': 0.9608020782470703, 'learning_rate': 2.727316347584089e-06, 'epoch': 0.86}
+{'loss': 0.0882, 'grad_norm': 1.3969608545303345, 'learning_rate': 2.5353869775922463e-06, 'epoch': 0.87}
+{'loss': 0.0958, 'grad_norm': 0.007177999708801508, 'learning_rate': 2.343457607600403e-06, 'epoch': 0.88}
+{'loss': 0.0857, 'grad_norm': 0.9890320897102356, 'learning_rate': 2.1515282376085605e-06, 'epoch': 0.89}
+{'loss': 0.0861, 'grad_norm': 0.8586294651031494, 'learning_rate': 1.959598867616717e-06, 'epoch': 0.9}
+{'loss': 0.0943, 'grad_norm': 1.0573502779006958, 'learning_rate': 1.7676694976248742e-06, 'epoch': 0.91}
+{'loss': 0.0961, 'grad_norm': 1.2556369304656982, 'learning_rate': 1.5757401276330311e-06, 'epoch': 0.92}
+{'loss': 0.0951, 'grad_norm': 0.0018707882845774293, 'learning_rate': 1.3838107576411882e-06, 'epoch': 0.93}
+{'loss': 0.0872, 'grad_norm': 1.6038928031921387, 'learning_rate': 1.191881387649345e-06, 'epoch': 0.94}
+{'loss': 0.0895, 'grad_norm': 1.3305162191390991, 'learning_rate': 9.999520176575022e-07, 'epoch': 0.95}
+{'loss': 0.1032, 'grad_norm': 0.9211673140525818, 'learning_rate': 8.080226476656592e-07, 'epoch': 0.96}
+{'loss': 0.0969, 'grad_norm': 1.25486159324646, 'learning_rate': 6.160932776738161e-07, 'epoch': 0.97}
+{'loss': 0.0917, 'grad_norm': 1.4544081687927246, 'learning_rate': 4.2416390768197306e-07, 'epoch': 0.98}
+{'loss': 0.0792, 'grad_norm': 1.5532643795013428, 'learning_rate': 2.3223453769013005e-07, 'epoch': 0.99}
+{'loss': 0.0794, 'grad_norm': 0.002685067243874073, 'learning_rate': 4.030516769828703e-08, 'epoch': 1.0}
+{'eval_loss': 0.0881388708949089, 'eval_accuracy': 0.9410402821429428, 'eval_f1_macro': 0.9036535172682898, 'eval_runtime': 216.8471, 'eval_samples_per_second': 384.428, 'eval_steps_per_second': 12.018, 'epoch': 1.0}
+{'train_runtime': 3512.3603, 'train_samples_per_second': 94.935, 'train_steps_per_second': 5.934, 'train_loss': 0.12770750838239867, 'epoch': 1.0}
+📊 Final evaluation on test set...
+
+Evaluation results:
+{'eval_loss': 0.0881388708949089, 'eval_accuracy': 0.9410402821429428, 'eval_f1_macro': 0.9036535172682898, 'eval_runtime': 217.5977, 'eval_samples_per_second': 383.101, 'eval_steps_per_second': 11.976, 'epoch': 1.0}
+💾 Saved metrics → preprocess-1-epoka-bert-model-80-20-new-dataset\metrics.json
+📌 Generating classification report...
+
+Classification report:
+              precision    recall  f1-score   support
+
+     sadness     0.9787    0.9733    0.9760     24238
+         joy     0.9644    0.9474    0.9558     28214
+        love     0.8132    0.9065    0.8573      6911
+       anger     0.9461    0.9491    0.9476     11463
+        fear     0.8706    0.9516    0.9093      9542
+    surprise     0.9974    0.6349    0.7759      2994
+
+    accuracy                         0.9410     83362
+   macro avg     0.9284    0.8938    0.9037     83362
+weighted avg     0.9439    0.9410    0.9406     83362
+
+💾 Saved classification report → preprocess-1-epoka-bert-model-80-20-new-dataset\classification_report.txt
+🧮 Computing confusion matrix...
+💾 Saved confusion matrix JSON → preprocess-1-epoka-bert-model-80-20-new-dataset\confusion_matrix.json
+📈 Saved confusion matrix plot → preprocess-1-epoka-bert-model-80-20-new-dataset\confusion_matrix.png
+📉 Generating learning curves...
+📉 Saved loss curve → preprocess-1-epoka-bert-model-80-20-new-dataset\loss_curve.png
+📈 Saved F1 curve → preprocess-1-epoka-bert-model-80-20-new-dataset\f1_curve.png
+💾 Saving model and tokenizer...
+✅ Model & tokenizer saved to: preprocess-1-epoka-bert-model-80-20-new-dataset\model
+
+🧪 Running quick prediction tests...
+
+🔍 Prediction Results:
+Text: The hotel completely messed up my reservation, and the staff didn’t even apologize.
+Predicted Emotion: anger
+--------------------------------------------------
+Text: I expected a peaceful weekend, but the room was noisy and I was disappointed.
+Predicted Emotion: anger
+--------------------------------------------------
+Text: I felt happy for the first time.
+Predicted Emotion: joy
+--------------------------------------------------
+Text: I was really confused during check-in, the instructions were unclear.
+Predicted Emotion: fear
+--------------------------------------------------
+Text: All day I felt alone and rejected, even though my team supports me.
+Predicted Emotion: sadness
+--------------------------------------------------
+Text: My heart finds it s home in you, in the quiet happiness of your presence and the way you make the world feel softer.
+Predicted Emotion: joy
+--------------------------------------------------
+Text: My eyes widened and my breath caught as the moment unfolded, brighter and sudded than I ever imagined.
+Predicted Emotion: fear
+--------------------------------------------------
