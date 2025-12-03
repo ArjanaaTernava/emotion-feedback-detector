@@ -9,7 +9,7 @@ Saves:
 - f1_curve.png
 - label_mapping.json
 - model + tokenizer (in model/ subfolder)
-into the folder: preprocess-3-epoka-bert-model
+into the folder: preprocess-3-epochs-bert-model
 """
 
 import os
@@ -60,7 +60,7 @@ def main():
 
     DATA_PATH = "data/emotions-dataset.xlsx"  
     
-    RUN_DIR = Path("preprocess-3-epoka-bert-model")
+    RUN_DIR = Path("preprocess-3-epochs-bert-model")
     RUN_DIR.mkdir(parents=True, exist_ok=True)
 
 
