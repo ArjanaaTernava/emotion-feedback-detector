@@ -2,7 +2,7 @@ import numpy as np
 from sklearn.metrics import accuracy_score, f1_score
 from transformers import Trainer, TrainingArguments
 
-
+# Tokenize a dataset
 def tokenize_dataset(dataset, tokenizer, max_len):
 
     def tokenize(batch):
@@ -13,9 +13,9 @@ def tokenize_dataset(dataset, tokenizer, max_len):
             max_length=max_len
         )
 
+    # Apply tokenization in batches
     dataset = dataset.map(tokenize, batched=True)
     keep = ["input_ids", "attention_mask", "label"]
-
     dataset = dataset.remove_columns(
         [c for c in dataset.column_names if c not in keep]
     )
@@ -23,7 +23,7 @@ def tokenize_dataset(dataset, tokenizer, max_len):
 
     return dataset
 
-
+# Compute evaluation metrics (accuracy and F1 macro)
 def compute_metrics(eval_pred):
     logits, labels = eval_pred
     preds = np.argmax(logits, axis=-1)
@@ -33,7 +33,7 @@ def compute_metrics(eval_pred):
         "f1_macro": f1_score(labels, preds, average="macro"),
     }
 
-
+# Train a Transformer model using Hugging Face Trainer
 def train_model(model, train_ds, test_ds, run_dir, cfg):
 
     args = TrainingArguments(
@@ -49,6 +49,7 @@ def train_model(model, train_ds, test_ds, run_dir, cfg):
         report_to="none",
     )
 
+    # Initialize Trainer with model, datasets, and metrics
     trainer = Trainer(
         model=model,
         args=args,

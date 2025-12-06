@@ -3,9 +3,11 @@ import json
 import gradio as gr
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
+# Paths to the trained model and label mapping
 MODEL_DIR = "../../models/preprocess-3-epoka-bert-model-80-20-new-dataset/model"
 LABEL_PATH = "../../models/preprocess-3-epoka-bert-model-80-20-new-dataset/label_mapping.json"
 
+# Load label mapping and create id-to-label dictionary
 with open(LABEL_PATH, "r") as f:
     label_map = json.load(f)
 id2label = {v: k for k, v in label_map.items()}
@@ -26,6 +28,7 @@ EMOJI = {
     "neutral": "😐"
 }
 
+# Function to run emotion prediction for a given text
 def predict_ui(text):
     if not text.strip():
         return "⚠️ Please enter some text."
@@ -61,6 +64,7 @@ def predict_ui(text):
 {details}
 """
 
+# Build Gradio interface
 with gr.Blocks() as app:
     gr.Markdown("# 🎭 Emotion Classification Chat")
     gr.Markdown("Type a sentence and the AI will analyze its emotion.")
@@ -75,6 +79,8 @@ with gr.Blocks() as app:
 
     button = gr.Button("Analyze Emotion", variant="primary")
 
+    # Link button click to prediction function
     button.click(fn=predict_ui, inputs=textbox, outputs=output)
 
+# Launch the Gradio app
 app.launch()
