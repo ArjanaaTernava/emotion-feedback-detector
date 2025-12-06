@@ -3,8 +3,8 @@ import json
 import gradio as gr
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
-MODEL_DIR = "../models/preprocess-3-epoka-bert-model-80-20-new-dataset/model"
-LABEL_PATH = "../models/preprocess-3-epoka-bert-model-80-20-new-dataset/label_mapping.json"
+MODEL_DIR = "../../models/preprocess-3-epoka-bert-model-80-20-new-dataset/model"
+LABEL_PATH = "../../models/preprocess-3-epoka-bert-model-80-20-new-dataset/label_mapping.json"
 
 with open(LABEL_PATH, "r") as f:
     label_map = json.load(f)
