@@ -3,7 +3,7 @@ import spacy
 from collections import Counter
 import matplotlib.pyplot as plt
 
-DATA_PATH = "../data/emotions-dataset.xlsx"
+DATA_PATH = "../../data/emotions-dataset.xlsx"
 df = pd.read_excel(DATA_PATH)
 df = df.dropna(subset=["text", "label"])
 
