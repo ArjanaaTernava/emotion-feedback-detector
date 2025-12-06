@@ -154,7 +154,7 @@ These results confirm that the model generalizes very well and maintains strong 
     - Surprise & Love: Lower precision caused by semantic similarity with joy and fear.
 - Overall, the confusion matrix confirms that most predictions fall correctly on the diagonal, meaning correct classification.
 
-![Project Logo]("results\preprocess-3-epochs-bert-model\confusion_matrix.png")
+![Project Logo]("results/preprocess-3-epochs-bert-model/confusion_matrix.png")
 
 - `loss_curve.png` - Training & Evaluation Loss: This plot shows how the model’s loss changed during training.
 - Interpretation:
@@ -163,7 +163,7 @@ These results confirm that the model generalizes very well and maintains strong 
     - Evaluation loss remains low and stable, confirming no overfitting.
 This confirms that the model trained efficiently and reached a stable optimum.
 
-  ![Project Logo]("results\preprocess-3-epochs-bert-model\loss_curve.png")
+  ![Project Logo]("results/preprocess-3-epochs-bert-model/loss_curve.png")
 
 - `f1_curve.png` - Macro F1 Across Epochs: This plot tracks how Macro F1-score changed over evaluation steps.
 - Observed Trend:
@@ -171,7 +171,7 @@ This confirms that the model trained efficiently and reached a stable optimum.
     - Epoch 2: Slight drop due to regularization.
     - Epoch 3: Stable recovery ≈ 0.916
 The best model was selected using Macro F1, ensuring balanced performance across classes.
-  ![Project Logo]("results\preprocess-3-epochs-bert-model\f1_curve.png")
+  ![Project Logo]("results/preprocess-3-epochs-bert-model/f1_curve.png")
 
 - `model/` - Final Deployed Model
 - This directory contains: 
@@ -187,9 +187,9 @@ The best model was selected using Macro F1, ensuring balanced performance across
 The User Interface enables the user to write any prompt that contains specific emotions and to predict them successfully.
 
 The images below shows how the UI looks:
-  ![Project Logo]("images\ui.jpeg")
+  ![Project Logo]("images/ui.jpeg")
 
-  ![Project Logo]("images\prompt.jpeg")
+  ![Project Logo]("images/prompt.jpeg")
 
 ## POS - Part of Speech
 - It describes the role a word plays in a sentence. The results are saved into this file: 
