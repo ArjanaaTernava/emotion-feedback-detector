@@ -31,6 +31,47 @@ The full training pipeline includes:
 - Model saving and inference testing
 - Interactive webpage for predicting emotions
 
+## Project structure
+
+- `data/`  
+  Contains dataset used for training, validation, and testing.
+
+- `images/`  
+  Stores images or visualizations, such as sample inputs, graphs, or diagrams.
+
+- `models/`  
+  Directory for saving trained models.
+
+- `results/`  
+  Stores evaluation metrics, predictions, or logs.
+
+- `src/`  
+  Main source code directory.
+
+  - `src/data/loader.py`  
+    Handles loading datasets, preprocessing data, splitting datasets.
+
+  - `src/evaluation/metrics.py`  
+    Implements model evaluation metrics like accuracy, F1-score, precision, recall.
+
+  - `src/evaluation/pos.py`  
+    Handles Part-of-Speech (POS) summary per emotion.
+
+  - `src/model/builder.py`  
+    Defines deep learning model, including architecture and layer setup.
+
+  - `src/training/training.py`  
+    Contains the training loop: feeding data to the model.
+
+  - `src/ui/app.py`  
+    Implements the user interface for interacting with the model.
+
+  - `src/utils/logging.py`  
+    Provides standardized logging.
+
+  - `src/main.py`  
+    Main entry point of the project.
+
 ## Dataset information
 
 This dataset is sourced from [Hugging Face](https://huggingface.co/datasets/dair-ai/emotion) contains a total of 439806  rows and 2 columns: `text and label`.
