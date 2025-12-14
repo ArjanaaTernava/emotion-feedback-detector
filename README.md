@@ -235,7 +235,9 @@ The images below shows how the UI looks:
 
 ## POS - Part of Speech
 - It describes the role a word plays in a sentence. The results are saved into this file: 
-`results/pos_counts_per_review.csv` 
+`results/pos_counts_per_review.csv`
+- The image below shows the POS count for nouns, pronouns, verbs, adverbs and adjectives.
+![Project Logo](results/pos-count.png)
 
 ### License
 
